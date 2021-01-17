@@ -14,13 +14,13 @@ It is tailored to people working in High Energy Physics that use ROOT (http://ro
 1. cd into your web folder
 
         cd <my-path>
-        
+
 1. Clone this repository (and its submodule jsroot)
 
-        git clone --recursive https://github.com/simonepigazzini/php-plots.git
-        
+        git clone --recursive https://github.com/maxgalli/php-plots
+
 1. Copy the example/htaccess file into .htaccess and edit its content to suit your needs.
- 
+
         cp -p example/htaccess .htaccess
         $EDITOR .htacces
 
@@ -29,7 +29,7 @@ It is tailored to people working in High Energy Physics that use ROOT (http://ro
         cp -r res/ /path/to/www/
         cp -r jsroot/ /path/to/www/
         cp index.php /path/to/www/
-        
+
 1. Open the web folder into your browser.
 
 1. Enjoy.
@@ -49,4 +49,4 @@ It is tailored to people working in High Energy Physics that use ROOT (http://ro
 
 # Example
 
-https://musella.web.cern.ch/musella/php-plots
+https://gallim.web.cern.ch/gallim/

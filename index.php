@@ -220,9 +220,15 @@ $(function() {
                         print " <a href=\"?".$_SERVER['QUERY_STRING']."&depth=1\">(hide plots in subfolders)</a>\n";
                     }
                     print "</h2>\n";
+
+                    print "<ul class=\"nav nav-pills nav-justified\">\n";
                     foreach ($folders as $filename) {
-                        print " <a href=\"$filename\">[$filename]</a>";
+                        print "<li class=\"nav-item\">\n";
+                        print " <a class=\"nav-link\" href=\"$filename\">$filename</a>";
+                        print "</li>\n";
                     }
+                    print "</ul>\n";
+
                     print "</div>";
                 }
 
@@ -239,7 +245,7 @@ $(function() {
         <div class="row" style="margin-top:20px">
             <div class="col-sm">
                 <div style="display: block; clear:both;">
-                <?php print "<a href=\"../\">[parent]</a> "; ?>
+                <?php print "<a href=\"../\">up</a> "; ?>
                 </div>
             </div>
         </div>
